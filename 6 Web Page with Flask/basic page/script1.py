@@ -14,7 +14,7 @@ app=Flask(__name__)
 def greet():
     inputName = request.form['myName']
     ip = request.remote_addr
-    #write data to file or to DB
+    #write data to file or to DB-k
     inputName = inputName.upper()+" hi!  Visiting from " + str(ip)
     return render_template("home.html",myName=inputName)
 
